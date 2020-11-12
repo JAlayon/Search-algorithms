@@ -5,7 +5,7 @@
     <artifactId>SearchAlgorithms</artifactId>
     <version>0.0.1.SNAPSHOT</version>
     <name>SearchAlgorithms</name>
-    <description>The aim of this proyect is to have a repository for set of algorithms implemented in Java.</description>
+    <description>The aim of this proyect is to have a repository for set of search algorithms implemented in java.</description>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
