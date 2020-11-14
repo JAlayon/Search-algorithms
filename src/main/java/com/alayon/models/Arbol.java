@@ -1,5 +1,5 @@
 
-package com.alayon.searchalgorithms.modelos;
+package com.alayon.models;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,7 +25,7 @@ public class Arbol extends HashMap<Long, NodoArbol>{
         }
     }
     
-    public boolean contine(Estado estado) {
+    public boolean contiene(Estado estado) {
         String info = estado.getInfo();
         Iterator<NodoArbol> nodos = this.values().iterator();
         while (nodos.hasNext()) {

@@ -1,4 +1,4 @@
-    package com.alayon.searchalgorithms.modelos;
+    package com.alayon.models;
 
 /**
  *

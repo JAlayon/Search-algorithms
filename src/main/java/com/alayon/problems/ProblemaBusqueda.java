@@ -1,10 +1,12 @@
-package com.alayon.searchalgorithms.modelos;
+package com.alayon.problems;
 
+import com.alayon.models.Estado;
 import java.util.ArrayList;
 
 /**
  *
  * @author jairsauceda
+ * @param <T>
  */
 public abstract class ProblemaBusqueda<T extends Estado> {
     protected final T estadoInicial;
@@ -26,7 +28,4 @@ public abstract class ProblemaBusqueda<T extends Estado> {
     public T getEstadoMeta() {
         return estadoMeta;
     }
-    
-    
-    
 }

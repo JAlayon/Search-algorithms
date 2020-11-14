@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.alayon.searchalgorithms.modelos;
+package com.alayon.models;
 
 import java.util.ArrayList;
 

@@ -1,5 +1,8 @@
-package com.alayon.searchalgorithms.modelos;
+package com.alayon.algorithms;
 
+import com.alayon.algorithms.AlgoritmoBusqueda;
+import com.alayon.models.Estado;
+import com.alayon.problems.ProblemaBusqueda;
 import java.util.ArrayList;
 
 /**

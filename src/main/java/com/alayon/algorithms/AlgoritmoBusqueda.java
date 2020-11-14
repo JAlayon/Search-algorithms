@@ -3,11 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.alayon.searchalgorithms.modelos;
+package com.alayon.algorithms;
 
+import com.alayon.models.Arbol;
+import com.alayon.models.Cola;
+import com.alayon.models.Estado;
+import com.alayon.problems.ProblemaBusqueda;
 import java.util.ArrayList;
-import java.util.function.Consumer;
-import java.util.function.Supplier;
 
 /**
  *
@@ -42,7 +44,7 @@ public abstract class AlgoritmoBusqueda {
         colaBusqueda.clear();
         arbolBusqueda.clear();
         conRepeticion = repeticion;
-        colaBusqueda.encolarAlInicio(problema.estadoInicial);
+        colaBusqueda.encolarAlInicio(problema.getEstadoInicial());
         int i = 0;
         while (!colaBusqueda.isEmpty()) {
             System.out.println("" + (i++) + " " + colaBusqueda);
@@ -55,7 +57,7 @@ public abstract class AlgoritmoBusqueda {
 
             Estado estadoActual = colaBusqueda.desencolar();
             arbolBusqueda.insertar(estadoActual);
-            if (estadoActual.getInfo().equals(problema.estadoMeta.getInfo())) {
+            if (estadoActual.getInfo().equals(problema.getEstadoMeta().getInfo())) {
                 return estadoActual;
             }
             ArrayList<Estado> sucesores = problema.getSucesores(estadoActual);
@@ -66,7 +68,7 @@ public abstract class AlgoritmoBusqueda {
 
     protected boolean validar(Estado sucesor) {
         if (!conRepeticion) {
-            return arbolBusqueda.contine(sucesor);
+            return !arbolBusqueda.contiene(sucesor);
         }
         return true;
     }
