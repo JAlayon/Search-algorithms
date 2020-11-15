@@ -55,7 +55,4 @@ public abstract class Estado {
         return this.getInfo() + (costoTotal > 0 ? String.format("(%.2f)",costoTotal):"");
     }
     
-    
-    
-    
 }
